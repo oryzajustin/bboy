@@ -49,14 +49,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node.addChildNode(child)
         }
         //set up properties
-        node.position = SCNVector3(0, -1, -4)
-        node.scale = SCNVector3(0.01, 0.01, 0.01)
+        node.position = SCNVector3(0, -30, -100)
+        node.scale = SCNVector3(0.2, 0.2, 0.2)
 
         //Add the node to the scene
         sceneView.scene.rootNode.addChildNode(node)
 
         //Load all the DAE animations
-        loadAnimation(withKey: "dancing", sceneName: "art.scnassets/footworkFixed", animationIdentifier: "footworkFixed-1")
+        loadAnimation(withKey: "dancing", sceneName: "art.scnassets/footworkFixed2", animationIdentifier: "footworkFixed2-1")
 
     }
 
